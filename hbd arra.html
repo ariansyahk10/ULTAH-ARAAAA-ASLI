@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Happy Birthday Arra Syabila Husna</title>
+    <style>
+        body {
+            background-color: #f7e1d7;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #d9534f;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .message {
+            font-size: 1.5em;
+            color: #4e9f3d;
+            margin-top: 20px;
+        }
+
+        .happy-birthday-img {
+            max-width: 80%;
+            height: auto;
+            margin-top: 30px;
+        }
+
+        .birthday-msg {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #ff69b4;
+            margin-top: 20px;
+        }
+
+        .fireworks {
+            color: red;
+            font-size: 2em;
+            animation: explode 1s ease-in-out infinite;
+        }
+
+        @keyframes explode {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.5); opacity: 0.5; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .question {
+            font-size: 1.5em;
+            color: #ff69b4;
+            margin-top: 40px;
+        }
+
+        .answer-btn {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: 0.3s ease;
+        }
+
+        .answer-btn:hover {
+            background-color: #f1f1f1;
+        }
+
+        .no-btn {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .yes-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .moved {
+            position: relative;
+            animation: moveButton 1s ease-in-out;
+        }
+
+        @keyframes moveButton {
+            0% { left: 0; }
+            100% { left: 200px; }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Happy Birthday, Arra Syabila Husna! 🎉</h1>
+
+    <div class="birthday-msg">
+        Happy birthday sayangkuu.. ♥ semoga dengan bertambahnya umur kamu semakin berfikiran dewasa, Sehat selalu, dimurahkan rezekinya yaa sayangkuuu.. 🩷🩷😘
+        ai always loving you baby 😍🥰
+    </div>
+
+    <!-- Fireworks Animation -->
+    <div class="fireworks">🎆🎇✨💥</div>
+
+    <!-- Image or Animation -->
+    <img src="https://via.placeholder.com/800x400/FF7F50/ffffff?text=Happy+Birthday+Arra" alt="Happy Birthday" class="happy-birthday-img">
+
+    <!-- Question and Answer -->
+    <div class="question">
+        Apakah kamu sayang aku? 💖
+    </div>
+    <button class="answer-btn yes-btn" id="yes-btn">YA</button>
+    <button class="answer-btn no-btn" id="no-btn">TIDAK</button>
+
+    <script>
+        // Script untuk tombol "TIDAK" yang akan bergeser
+        document.getElementById("no-btn").addEventListener("click", function() {
+            this.classList.add("moved");
+            setTimeout(() => {
+                // Menghentikan pergeseran setelah animasi selesai
+                this.classList.remove("moved");
+            }, 1000); // Durasi animasi 1 detik
+        });
+
+        // Script untuk tombol "YA" jika ingin memberikan respons tertentu
+        document.getElementById("yes-btn").addEventListener("click", function() {
+            alert("I love you too, Sayang! 😘");
+        });
+    </script>
+
+</body>
+</html>
